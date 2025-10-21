@@ -17,7 +17,7 @@ body{
 header {
     display: flex;
     flex-direction: row;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
@@ -49,18 +49,23 @@ main {
     align-items: center;
     list-style: none;
     margin-top: 2rem;
+    
 }
 
 .games-list-game{
     width: 80%;
-    height: 300px;
+    height: 250px;
     background-color: var(--secondary-color);
     border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .games-list-game-img{
     max-width: 100%;
-    height: 75%;
+    width: 100%;
+    height: 70%;
     border-radius: 1rem;
 }
 
@@ -69,15 +74,22 @@ main {
     flex-direction: row;
     justify-content:space-around;
     align-items:center;
-    height: 25%;
+    height: 10%;
     border-radius: 1rem;
     text-align: center;
 }
 
-.games-list-game-details button {
-    width: 50%;
+.games-list-game-details h3 {
+    font-size: 1rem;
 }
 
-.games-list-game-details h3 {
-    width: 30%;
+.games-list-game-details p {
+    font-size: 0.8rem;
 }
+
+.games-list-game button {
+    width: 50%;    
+    text-align: center;
+    margin-top: 10px;
+}
+

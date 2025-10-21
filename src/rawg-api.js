@@ -1,6 +1,7 @@
+//para usar é necessário coloar sua key do RAWG aqui
 const rawgKey = "";
 
-async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) {
+export async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) {
 
     //Etapas para gerar a URL a ser utilizada
     const urlBase = "https://api.rawg.io/api/games";
@@ -18,18 +19,18 @@ async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) {
     //Etapas para fazer a requisição a API, utilizando try catch
     try {
         const res = await fetch(url);
-        if (!res.ok) throw new Error(`HTTP ${res.status} - &{res.statusText}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status} - ${res.statusText}`);
 
         const data = await res.json();
-        return data;
+        const games = data.results;
+        return games;
     } catch (err) {
         console.error("Erro ao buscar jogos no RAWG: ", err);
         throw err;
     }
+    
 }
 
-(async () => {
-  const data = await fetchGames({ page: 1, page_size: 10 });
-  console.log(data); // inspeciona estrutura: data.results
-})();
+
+
 
