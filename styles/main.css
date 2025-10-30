@@ -2,13 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 :root {
-  --main-color: #1a1424;
-  --secondary-color: #FFFFFF;
+  --main-color: #15101d;
+  --secondary-color: #221a2e;
+  --text-color:#FFFFFF;
 }
-
 
 body{
     background-color: var(--main-color);
@@ -22,7 +27,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 header input {
@@ -38,13 +43,13 @@ header input {
 main {
     display: flex;
     flex-direction: column;
-
+    color: var(--text-color);
 }
 
 .games-list{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -54,7 +59,7 @@ main {
 
 .games-list-game{
     width: 80%;
-    height: 250px;
+    height: 350px;
     background-color: var(--secondary-color);
     border-radius: 1rem;
     justify-content: center;
@@ -81,15 +86,17 @@ main {
 
 .games-list-game-details h3 {
     font-size: 1rem;
+    margin-top: 5px;
 }
 
 .games-list-game-details p {
     font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 .games-list-game button {
     width: 50%;    
     text-align: center;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 

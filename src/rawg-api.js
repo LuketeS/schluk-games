@@ -27,8 +27,7 @@ export async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) 
     } catch (err) {
         console.error("Erro ao buscar jogos no RAWG: ", err);
         throw err;
-    }
-    
+    }    
 }
 
 
