@@ -1,0 +1,30 @@
+# ------------------------------------------
+# ARQUIVOS SENSÍVEIS E DE CONFIGURAÇÃO LOCAL
+# ------------------------------------------
+# Sua chave de API NUNCA deve ser commitada.
+# Você provavelmente a salvará em um arquivo .env ou config.local.js
+.env
+config.js
+
+# ------------------------------------------
+# DEPENDÊNCIAS DE PACOTES (Node.js)
+# ------------------------------------------
+# Se você estiver usando npm (ou yarn/pnpm) para instalar pacotes,
+# essa pasta contém todas as bibliotecas e deve ser ignorada.
+node_modules/
+
+# ------------------------------------------
+# ARQUIVOS DO SISTEMA OPERACIONAL / EDITOR
+# ------------------------------------------
+# Arquivos de metadados do macOS
+.DS_Store
+
+# Arquivos de configurações do Visual Studio Code
+.vscode/
+
+# ------------------------------------------
+# Arquivos de Build/Distribuição (Se for usar)
+# ------------------------------------------
+# Se você tiver um processo de build (como Webpack/Vite) que gera uma pasta "dist"
+# /dist
+# /build

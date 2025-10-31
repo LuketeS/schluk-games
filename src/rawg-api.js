@@ -1,5 +1,6 @@
-//para usar é necessário coloar sua key do RAWG aqui
-const rawgKey = "";
+//para usar é necessário colocar sua key do RAWG aqui
+import {RAWG_KEY} from "../config.js";
+const rawgKey = RAWG_KEY;
 
 export async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) {
 

@@ -21,7 +21,7 @@ export async function createGameLi (games) {
                 }</p>
                                             
             </div>
-            <button>Detalhes</button>
+            <a href="#">Detalhes</a>
         `
         gameList.appendChild(li);
     })

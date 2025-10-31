@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schluk Games</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/games-list.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -23,24 +24,31 @@
         </section>
 
         <section class="games">
-                <ul class="games-list">
-                    <li class="games-list-game">
-                        <img src="/assets/imagem-tibia.png" class="games-list-game-img">
-                        <div class="games-list-game-details">
-                            <div>                                
-                            <h3>Tibia</h3>                           
-                            <p>Nota: 5</p>   
-                            </div>                         
-                            <p>Gêneros: MMORPG</p>                                                       
-                        </div>
-                        <button>Detalhes</button>
-                    </li>
+            <ul class="games-list">
+                <!-- <li class="games-list-game">
+                    <img src="/assets/imagem-tibia.png" class="games-list-game-img">
+                    <div class="games-list-game-details">
+                        <div>                                
+                        <h3>Tibia</h3>                           
+                        <p>Nota: 5</p>   
+                        </div>                         
+                        <p>Gêneros: MMORPG</p>                                                       
+                    </div>
+                    <a href="#" class="">Detalhes</a>
+                </li> -->
             </ul>
         </section>
     </main>
 
-
+    <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Mais Games
+            </button>
+    </div>
     
+    <footer>
+        <p>Desenvolvido por Lucas de Santana Schmalz</p>
+    </footer>
 </body>
 
 <script type="module" src="./src/main.js"></script>

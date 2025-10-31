@@ -6,5 +6,16 @@ import {createGameLi} from "./gameCard.js";
 // createGameLi();  
 // })();
 
-const games = await fetchGames({ page: 1, page_size: 10 });
+const loadMoreButton = document.getElementById("loadMoreButton");
+let page = 1;
+const page_size = 10;
+
+const games = await fetchGames({ page, page_size});
+
 createGameLi(games);
+
+loadMoreButton.addEventListener("click", async () => {
+    page +=1;
+    const newGames = await fetchGames({page, page_size});
+    createGameLi(newGames);
+})
