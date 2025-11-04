@@ -7,15 +7,33 @@ import {createGameLi} from "./gameCard.js";
 // })();
 
 const loadMoreButton = document.getElementById("loadMoreButton");
+const searchInput = document.getElementById("search");
+const gameList = document.querySelector(".games-list");
+
 let page = 1;
 const page_size = 10;
+let searchGame = ""
 
-const games = await fetchGames({ page, page_size});
-
+let games = await fetchGames({ page, page_size, search: searchGame});
 createGameLi(games);
+
+searchInput.addEventListener("keypress", async (evento) => {
+    const searchText = searchInput.value.trim();
+    if (evento.key === "Enter") {
+        evento.preventDefault();
+        if (searchText !== "") {
+            console.log("Li o enter")
+            console.log(searchText)
+            searchGame = searchText;
+            games = await fetchGames({ page, page_size, search: searchGame});
+            gameList.innerHTML = ""
+            createGameLi(games);    
+            }
+         }
+ })
 
 loadMoreButton.addEventListener("click", async () => {
     page +=1;
-    const newGames = await fetchGames({page, page_size});
+    const newGames = await fetchGames({page, page_size, search: searchGame});
     createGameLi(newGames);
 })
