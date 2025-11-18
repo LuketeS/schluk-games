@@ -29,13 +29,14 @@
 
 .games-list-game-details{
     display: flex;
-    width: 100%;
+    width: 90%;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;    
     border-radius: 1rem;
     text-align: center;
     margin-top: 10px;
+    gap: 2%;
 }
 
 .games-list-game-details h3 {

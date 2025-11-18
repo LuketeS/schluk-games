@@ -22,27 +22,6 @@ body{
     align-items: center;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    font-size: 0.7rem;
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    color: var(--text-color);
-}
-
-header input {
-    border-radius: 1rem;
-    text-align: center;
-    padding: 5px;
-}
-
-#search{
-    width: 70%;
-}
-
 main {
     display: flex;
     flex-direction: column;

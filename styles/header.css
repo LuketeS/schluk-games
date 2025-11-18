@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.header-logosearch{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7rem;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--text-color);
+    width: 100%;  
+}
+
+.header-filters{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 1rem;
+    gap: 5px;
+    text-align: center;
+}
+
+#header-filter-filter{
+    text-align: center;
+}
+
+#logo{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header input {
+    border-radius: 1rem;
+    text-align: center;
+    padding: 5px;
+}
+
+#search{
+    width: 70%;
+}
