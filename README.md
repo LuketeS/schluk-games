@@ -3,6 +3,11 @@
 Um catálogo interativo de jogos que consome a **API RAWG**, exibindo informações como imagem, nome, gênero e nota de cada jogo.  
 Desenvolvido com **HTML**, **CSS** e **JavaScript puro**, o projeto foi criado com foco em aprendizado de consumo de APIs, manipulação do DOM e organização de código em módulos.
 
+<div align="center">
+   
+![Amostra do Projeto Schluk Games](https://github.com/user-attachments/assets/0ada4a16-687a-4772-aacd-af1dd3a61e76)
+
+</div>
 ---
 
 ## 🚀 Funcionalidades
