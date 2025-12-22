@@ -11,7 +11,7 @@ const searchInput = document.getElementById("search");
 const gameList = document.querySelector(".games-list");
 
 let page = 1;
-const page_size = 10;
+const page_size = 5;
 let searchGame = ""
 
 let games = await fetchGames({ page, page_size, search: searchGame});
@@ -22,8 +22,6 @@ searchInput.addEventListener("keypress", async (evento) => {
     if (evento.key === "Enter") {
         evento.preventDefault();
         if (searchText !== "") {
-            console.log("Li o enter")
-            console.log(searchText)
             searchGame = searchText;
             games = await fetchGames({ page, page_size, search: searchGame});
             gameList.innerHTML = ""

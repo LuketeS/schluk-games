@@ -2,7 +2,7 @@
 import {RAWG_KEY} from "../config.js";
 const rawgKey = RAWG_KEY;
 
-export async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) {
+export async function fetchGames({ page = 1, page_size = 10, search = ""} = {}) {
 
     //Etapas para gerar a URL a ser utilizada
     const urlBase = "https://api.rawg.io/api/games";
@@ -25,7 +25,6 @@ export async function fetchGames({ page = 1, page_size = 20, search = ""} = {}) 
     try {
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP ${res.status} - ${res.statusText}`);
-
         const data = await res.json();
         const games = data.results;
         return games;
