@@ -23,7 +23,7 @@
 .games-list-game-img{
     max-width: 100%;
     width: 100%;
-    height: 67%;
+    height: 200px;
     border-radius: 1rem;
 }
 
@@ -70,3 +70,23 @@
     padding: 10px 25px;
     border-radius: 1rem;
 }
+
+@media (min-width:600px){
+
+    .games-list-game-img{
+       height: 250px;
+    }
+
+}
+
+@media (min-width:800px){
+
+    .games-list-game{
+        width: 70%;
+    }
+
+    .games-list-game-img{
+       height: 400px;
+    }
+}
+
