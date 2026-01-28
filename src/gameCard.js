@@ -9,11 +9,11 @@ export async function createGameLi (games) {
         li.innerHTML = `
             <img src="${game.background_image}" class="games-list-game-img">
             <div class="games-list-game-details">
-                <div>
+                <div class="game-info-main">
                     <h3>${game.name}</h3>
                     <p>Nota: ${game.rating}</p>
                 </div>
-                <p>Gêneros: ${
+                <p class="game-info-genres">Gêneros: ${
                     game.genres.map((genre)=>{
                         genre.name
                         return genre.name

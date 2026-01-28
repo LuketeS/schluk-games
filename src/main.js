@@ -11,7 +11,7 @@ const searchInput = document.getElementById("search");
 const gameList = document.querySelector(".games-list");
 
 let page = 1;
-const page_size = 5;
+const page_size = 6;
 let searchGame = ""
 
 let games = await fetchGames({ page, page_size, search: searchGame});
@@ -27,7 +27,7 @@ searchInput.addEventListener("keypress", async (evento) => {
             gameList.innerHTML = ""
             createGameLi(games);    
             }
-         }
+        }
  })
 
 loadMoreButton.addEventListener("click", async () => {
